@@ -1,3 +1,11 @@
+/* components */
+@import url('./components/vButton.css');
+@import url('./components/serviceItem.css');
+
+
+/* common classes */
+
+
 *{
     box-sizing: border-box;
     list-style: none;
@@ -57,24 +65,24 @@ h4{
 p{
     font-family: 'Roboto';
     font-weight:300;
-    font-size:24pt;
+    font-size:14pt;
+    color:var(--color-primary);
+}
+
+label{
+    font-family: 'Roboto';
+    font-weight:500;
+    font-size:20pt;
     color:var(--color-primary);
 }
 
 
-/* components */
+.pale-blue{ background-color:var(--color-pale-blue) }
+.t-pale-blue{ color:var(--color-pale-blue) }
+.pale-blue-bis{ background-color:var(--color-pale-blue-bis) }
+.t-pale-blue-bis{ color:var(--color-pale-blue-bis) }
 
-button {
-    width:max-content;
-    height:max-content;
-    padding:10px 20px;
-
-    border:none;
-    border-radius:2em;
-    background-color: var(--color-primary);
-
-    font-family: 'Roboto';
-    font-weight:700;
-    font-size:1em;
-    color:var(--color-pale-blue);
-}
+.pale-pink{ background-color:var(--color-pale-pink) }
+.t-pale-pink{ color:var(--color-pale-pink) }
+.pale-pink-bis{ background-color:var(--color-pale-pink-bis) }
+.t-pale-pink-bis{ color:var(--color-pale-pink-bis) }

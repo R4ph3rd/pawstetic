@@ -1,0 +1,14 @@
+button {
+    width:max-content;
+    height:max-content;
+    padding:10px 20px;
+
+    border:none;
+    border-radius:2em;
+    background-color: var(--color-primary);
+
+    font-family: 'Roboto';
+    font-weight:700;
+    font-size:1em;
+    color:var(--color-pale-blue);
+}

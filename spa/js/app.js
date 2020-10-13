@@ -1,7 +1,5 @@
-// import {default as button} from './components/button.js';
-const button = import('./components/button.js');
-
 Vue.component('v-button', () => import('./components/button.js'));
+Vue.component('service-item', () => import('./components/serviceItem.js'));
 
 const app = new Vue({
     el: '#app',
