@@ -11,9 +11,10 @@ class SpecieController extends Controller{
     
     public function getSpecie($id){
         $specie = Specie::find($id);
-        $things = Things_by_specie::where('specie_id', $id) -> get();
+        $things = array( 'things' => Things_by_specie::where('specie_id', $id) -> get() -> pluck('thing_id'));
         return response() -> json([$specie, $things]);
     }
+
     
     public function createSpecie(Request $request){
         $specie = Specie::create($request -> all());
