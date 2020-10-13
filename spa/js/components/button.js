@@ -10,6 +10,11 @@ export default {
             required: false
         },
     },
+    data(){
+        return {
+            label: ''
+        }
+    },
     computed:{
         style(){
             let style = '';
@@ -17,10 +22,9 @@ export default {
             if (this.outlined) style += 'outlined';
 
             return style;
-        },
-        label(){
-            if (this.$slots) return this.$slots[0].text;
-            return '';
         }
+    },
+    mounted(){
+        this.label = this.$slots.default[0].text;
     }
 }
