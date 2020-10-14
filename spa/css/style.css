@@ -1,7 +1,7 @@
 /* components */
 @import url('./components/vButton.css');
 @import url('./components/serviceItem.css');
-
+@import url('./components/cardPet.css');
 
 /* common classes */
 
@@ -31,7 +31,6 @@
 body{
     width:100%;
     height:100%;
-    background:black;
 }
 
 h1{
@@ -76,6 +75,26 @@ label{
     color:var(--color-primary);
 }
 
+.sectionLabel{
+    font-family: 'Roboto';
+    font-weight:600;
+    font-size:12pt;
+    text-transform: uppercase;
+    color:var(--color-primary-bis);
+}
+
+.number{
+    font-family: 'Roboto';
+    font-weight:400;
+    font-size:16pt;
+    color:var(--color-primary-bis);
+}
+
+.separator{
+    width: 100%;
+    height:100%;
+    background: var(--color-pale-blue-bis);
+}
 
 .pale-blue{ background-color:var(--color-pale-blue) }
 .t-pale-blue{ color:var(--color-pale-blue) }

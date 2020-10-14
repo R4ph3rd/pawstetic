@@ -1,0 +1,12 @@
+.icon{
+    width:32px;
+    height:32px;
+    border-radius:32px;
+    background-repeat: no-repat;
+    background-position: center;
+}
+
+.male{ background-image: url('../assets/icons/male.svg')}
+.female{ background-image: url('../assets/icons/female.svg')}
+.true{ background-image: url('../assets/icons/true.svg')}
+.false{ background-image: url('../assets/icons/false.svg')}

@@ -1,0 +1,80 @@
+.petCard{
+    display:grid;
+    grid-template-rows: 40%  1px 30% 30%;
+    grid-row-gap:30px;
+    align-items: center;
+    justify-items:center;
+
+    width: 650px;
+    height:max-content;
+    padding: 30px;
+    padding-top:60px;
+
+    background-color: white;
+    border:var(--color-pale-blue) solid 1px;
+    border-radius: 4px;
+}
+
+.petCard img {
+    position: absolute;
+    top: -50px;
+    left:calc(50% - 40px);
+    width:80px;
+    height:80px;
+    border-radius:100px;
+    object-fit: cover;
+}
+
+.petCard * {
+    text-align: center;
+}
+
+.petCard .sectionLabel{
+    font-weight:600;
+    font-size:12pt;
+}
+
+.petCard .favorites ul {
+    display: flex;
+    margin-top:20px;
+    /* justify-content: space-evenly; */
+
+}
+
+.petCard .favorites li {
+    width:max-content;
+    height:max-content;
+    border-radius:20pt;
+    padding: 8px 20px;
+    margin-left:12px;
+
+    background: var(--color-pale-pink-bis);
+    color:var(--color-primary-bis);
+    font-size:12pt;
+    font-family: 'Roboto';
+    font-weight:500;
+    text-transform: capitalize;
+}
+
+.petCard .caracteristics{
+    width:100%;
+}
+
+.petCard .caracteristics ul{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:100px;
+}
+
+.petCard .caracteristics li{
+    width:100%;
+    height:100%;
+    padding:20px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: var(--color-pale-blue-bis) solid 1px;
+}
